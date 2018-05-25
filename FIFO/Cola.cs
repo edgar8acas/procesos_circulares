@@ -44,11 +44,10 @@ namespace FIFO
 
         public Proceso Decolar()
         {
-            
-            Proceso eliminado = new Proceso(ultimo.Ciclos);
-
             if(_size != 0)
             {
+
+                Proceso eliminado = new Proceso(ultimo.Ciclos);
                 if (ultimo.Anterior == null)
                 {
                     ultimo = null;
@@ -74,6 +73,8 @@ namespace FIFO
         {
             return ultimo;
         }
+
+        
 
     }
 }

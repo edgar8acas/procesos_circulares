@@ -32,7 +32,7 @@ namespace FIFO
                     if (actual.Ciclos == 0)
                     {
                         atendidos++;
-                        actual = cola.Decolar();
+                        cola.Decolar();
                     }
                     actual.Ciclos--;
                 }
@@ -43,7 +43,15 @@ namespace FIFO
 
             }
 
-            return "Vacia: " + ciclosVacia + " ciclos \t" + "Atendidos: " + atendidos + " procesos \t" + "Pendientes " + cola.Size + " procesos \r\n"; 
+            int ciclosFaltantes = 0;
+            
+            for(int i = 0; i < cola.Size; i++)
+            {
+                Proceso p = cola.Decolar();
+                ciclosFaltantes += p.Ciclos;
+            }
+            
+            return "Vacia: " + ciclosVacia + " ciclos \t" + "Atendidos: " + atendidos + " procesos \t" + "Pendientes " + cola.Size + " procesos \t" + "Ciclos faltantes: " + ciclosFaltantes + "\r\n"; 
         }
 
     }

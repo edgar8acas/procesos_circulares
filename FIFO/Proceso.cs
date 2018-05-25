@@ -43,7 +43,9 @@ namespace FIFO
 
         public Proceso(int ciclos)
         {
-            _ciclos = Ciclos;
+            //_anterior = anterior;
+            //_siguiente = siguiente;
+            _ciclos = ciclos;
         }
 
     }
