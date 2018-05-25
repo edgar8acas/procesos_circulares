@@ -1,0 +1,10 @@
+c:\users\caste\source\repos\FIFO\FIFO\bin\Debug\FIFO.exe.config
+c:\users\caste\source\repos\FIFO\FIFO\bin\Debug\FIFO.exe
+c:\users\caste\source\repos\FIFO\FIFO\bin\Debug\FIFO.pdb
+c:\users\caste\source\repos\FIFO\FIFO\obj\Debug\FIFO.csprojResolveAssemblyReference.cache
+c:\users\caste\source\repos\FIFO\FIFO\obj\Debug\FIFO.Form1.resources
+c:\users\caste\source\repos\FIFO\FIFO\obj\Debug\FIFO.Properties.Resources.resources
+c:\users\caste\source\repos\FIFO\FIFO\obj\Debug\FIFO.csproj.GenerateResource.cache
+c:\users\caste\source\repos\FIFO\FIFO\obj\Debug\FIFO.csproj.CoreCompileInputs.cache
+c:\users\caste\source\repos\FIFO\FIFO\obj\Debug\FIFO.exe
+c:\users\caste\source\repos\FIFO\FIFO\obj\Debug\FIFO.pdb
