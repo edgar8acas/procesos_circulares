@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace FIFO
@@ -10,31 +11,46 @@ namespace FIFO
     {
         private Cola cola;
         private Random random;
+        private ListaCircular lista;
+        private string log;
+
+        public string Log
+        {
+            get { return log; }
+            set { log = value; }
+        }
 
         public string Simular()
         {
+            log = "";
+            lista = new ListaCircular();
             cola = new Cola();
             random = new Random();
             Proceso actual;
             int atendidos = 0;
             int ciclosVacia = 0;
             
-            for (int i = 0; i < 300; i++)
+            for (int i = 0; i < 100; i++)
             {
+                //Thread.Sleep(10);
                 if (random.Next(20) < 7)
                 {
-                    cola.Encolar(new Proceso());
+                    Proceso p = new Proceso();
+                    lista.Agregar(p);
+                    log += "(Agregado) -> " + p.ToString();
+                    
                 }
                 
-                if(cola.Size != 0)
+                if(lista.Size != 0)
                 {
-                    actual = cola.Ver();
+                    actual = lista.Ver();
+                    actual.Ciclos--;
                     if (actual.Ciclos == 0)
                     {
                         atendidos++;
-                        cola.Decolar();
+                        log += "(Eliminado) -> " + lista.Eliminar().ToString();
                     }
-                    actual.Ciclos--;
+                    
                 }
                 else
                 {
@@ -44,15 +60,18 @@ namespace FIFO
             }
 
             int ciclosFaltantes = 0;
-            
-            for(int i = 0; i < cola.Size; i++)
+            int sizeBefore = lista.Size;
+            for(int i = 0; i < lista.Size; i++)
             {
-                Proceso p = cola.Decolar();
+                Proceso p = lista.Eliminar();
+                
                 ciclosFaltantes += p.Ciclos;
             }
             
-            return "Vacia: " + ciclosVacia + " ciclos \t" + "Atendidos: " + atendidos + " procesos \t" + "Pendientes " + cola.Size + " procesos \t" + "Ciclos faltantes: " + ciclosFaltantes + "\r\n"; 
+            return "Vacia: " + ciclosVacia + " ciclos \t" + "Atendidos: " + atendidos + " procesos \t" + "Pendientes " + sizeBefore + " procesos \t" + "Ciclos faltantes: " + ciclosFaltantes + "\r\n"; 
         }
+
+        
 
     }
 }

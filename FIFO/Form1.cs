@@ -21,6 +21,7 @@ namespace FIFO
         private void btnSimular_Click(object sender, EventArgs e)
         {
             txtResult.Text += procesador.Simular();
+            txtLog.Text = procesador.Log;
         }
     }
 }

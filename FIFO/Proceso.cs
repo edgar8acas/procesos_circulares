@@ -8,7 +8,7 @@ namespace FIFO
 {
     class Proceso
     {
-        Random cycleGenerator;
+        static Random cycleGenerator = new Random();
         private int _ciclos;
 
         public int Ciclos
@@ -37,7 +37,7 @@ namespace FIFO
 
         public Proceso()
         {
-            cycleGenerator = new Random();
+            
             _ciclos = cycleGenerator.Next(4, 15);
         }
 
@@ -46,6 +46,11 @@ namespace FIFO
             //_anterior = anterior;
             //_siguiente = siguiente;
             _ciclos = ciclos;
+        }
+
+        public override string ToString()
+        {
+            return "Ciclos: \t" + _ciclos + "\r\n";
         }
 
     }

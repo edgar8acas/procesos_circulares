@@ -8,3 +8,13 @@ c:\users\caste\source\repos\FIFO\FIFO\obj\Debug\FIFO.csproj.GenerateResource.cac
 c:\users\caste\source\repos\FIFO\FIFO\obj\Debug\FIFO.csproj.CoreCompileInputs.cache
 c:\users\caste\source\repos\FIFO\FIFO\obj\Debug\FIFO.exe
 c:\users\caste\source\repos\FIFO\FIFO\obj\Debug\FIFO.pdb
+C:\Users\caste\source\Multiproceso_ListaCircular\FIFO\bin\Debug\FIFO.exe.config
+C:\Users\caste\source\Multiproceso_ListaCircular\FIFO\bin\Debug\FIFO.exe
+C:\Users\caste\source\Multiproceso_ListaCircular\FIFO\bin\Debug\FIFO.pdb
+C:\Users\caste\source\Multiproceso_ListaCircular\FIFO\obj\Debug\FIFO.csprojResolveAssemblyReference.cache
+C:\Users\caste\source\Multiproceso_ListaCircular\FIFO\obj\Debug\FIFO.Form1.resources
+C:\Users\caste\source\Multiproceso_ListaCircular\FIFO\obj\Debug\FIFO.Properties.Resources.resources
+C:\Users\caste\source\Multiproceso_ListaCircular\FIFO\obj\Debug\FIFO.csproj.GenerateResource.cache
+C:\Users\caste\source\Multiproceso_ListaCircular\FIFO\obj\Debug\FIFO.csproj.CoreCompileInputs.cache
+C:\Users\caste\source\Multiproceso_ListaCircular\FIFO\obj\Debug\FIFO.exe
+C:\Users\caste\source\Multiproceso_ListaCircular\FIFO\obj\Debug\FIFO.pdb
